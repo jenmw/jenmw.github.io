@@ -1,0 +1,60 @@
+header {
+    padding: 20px 0;
+  }
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header p {
+    padding: 0 20px;
+    margin: 0;
+    font-size: 1.3vw;
+}
+
+.dark-blue{
+  background-color: #1f2f46 !important;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-color: #1f2f46 !important;
+    height: 500px;
+}
+
+h1 {
+  color: #1f2f46 !important;
+}
+
+h2, h3, header p{
+  color: #f08560 !important;
+  font-family: helveticaneue !important;
+  font-weight: 1000 !important;
+}
+
+h2 {
+  font-size: 9vw !important;
+}
+
+.skill-list{
+  position: absolute;
+  height: 9vw;
+  width: 20vw;
+  right: 1vw;
+  bottom: 15vw;
+}
+
+.skill-list > h4 {
+  color: #1a2636;
+  font-family: helveticaneue;
+  font-weight: 800;
+  font-size: 2.5vw;
+}
