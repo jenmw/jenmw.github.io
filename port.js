@@ -11,13 +11,3 @@ $(function() {
     });
 
 
-// $(function() {
-
-//     $(window).on('wheel', function(e) {
-    
-//         var delta = e.originalEvent.deltaY;
-    
-//         if (delta > 0) console.log("meow");
-//         // else $('body').text('up');
-//     });
-//     });

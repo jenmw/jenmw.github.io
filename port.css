@@ -1,4 +1,5 @@
 header {
+  background-color: #1f2f46;
     padding: 20px 0;
   }
 
@@ -41,10 +42,20 @@ h2 {
   font-size: 9vw;
 }
 
+a {
+  color: #f08560;
+}
+
+a:hover {
+  color: #f08560;
+  text-decoration: none;
+  border-bottom: 3px solid #f08560;
+}
+
 .skill-list{
   position: absolute;
   height: 9vw;
-  width: 20vw;
+  width: 22vw;
   right: 1vw;
   bottom: 18vw;
 }
@@ -55,4 +66,18 @@ h2 {
   font-weight: 800;
   font-size: 2.5vw;
   margin-bottom:1vw;
+}
+
+/* Contact page */
+
+#contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5vw;
+  background-color: #fff;
+  font-family: helveticaneue;
+}
+
+#contact-form > * > * {
+  margin: 1%;
 }
