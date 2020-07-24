@@ -26,6 +26,12 @@ header p {
     align-items: center;
     background-color: #1f2f46;
     height: 500px;
+    margin-bottom: 0;
+}
+
+.port-nav{
+  padding-left: 0;
+  padding-right: 0;
 }
 
 h1 {
@@ -42,6 +48,16 @@ h2 {
   font-size: 9vw;
 }
 
+.carousel-caption{
+  font-size: 1.5vw;
+  font-family: helveticaneue;
+  background-color: rgba(255, 255, 255, .8);;
+  color: #1f2f46;
+  text-shadow: none;
+  width:100%;
+  left: 0;
+}
+
 a {
   color: #f08560;
 }
@@ -50,6 +66,7 @@ a:hover {
   color: #f08560;
   text-decoration: none;
   border-bottom: 3px solid #f08560;
+  transition: border-length 0.6s linear;
 }
 
 .skill-list{
@@ -60,12 +77,12 @@ a:hover {
   bottom: 18vw;
 }
 
-.skill-list > h4 {
+.skill-list > .container-fluid > h4 {
   color: #1a2636;
   font-family: helveticaneue;
   font-weight: 800;
   font-size: 2.5vw;
-  margin-bottom:1vw;
+  margin-bottom: 1vw;
 }
 
 /* Contact page */
@@ -80,4 +97,29 @@ a:hover {
 
 #contact-form > * > * {
   margin: 1%;
+}
+
+.btn-primary {
+  background-color: #f08560;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1f2f46;
+}
+
+.this-page {
+  text-decoration: none;
+  border-bottom: 3px solid #f08560;
+}
+
+footer {
+  background-color: #1a2636;
+  height: 8vw;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link :hover {
+  border-bottom: none !important;
 }
