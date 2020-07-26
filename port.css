@@ -1,6 +1,10 @@
+/* body {
+  padding-bottom: 18vw;
+} */
+
 header {
   background-color: #1f2f46;
-    padding: 20px 0;
+    padding: 0.5vw 0;
   }
 
 header .row,
@@ -11,13 +15,14 @@ footer .row {
 
 header nav {
     display: flex;
+    flex: auto;
     justify-content: flex-end;
 }
 
 header p {
-    padding: 0 20px;
+    padding: 0 2vw;
     margin: 0;
-    font-size: 1.3vw;
+    font-size: calc(1rem + 0.8vw);
 }
 
 .jumbotron {
@@ -25,7 +30,7 @@ header p {
     display: flex;
     align-items: center;
     background-color: #1f2f46;
-    height: 500px;
+    height: calc(35rem + 10vw);
     margin-bottom: 0;
 }
 
@@ -48,8 +53,19 @@ h2 {
   font-size: 9vw;
 }
 
+h3 {
+  font-size: calc(1rem + 3vh);
+}
+
+h5 {
+  font-size:1vw;
+  font-family: helveticaneue;
+  font-weight: 1000;
+  color:#727272;
+}
+
 .carousel-caption{
-  font-size: 1.5vw;
+  font-size: calc(1rem + 1vw);
   font-family: helveticaneue;
   background-color: rgba(255, 255, 255, .8);;
   color: #1f2f46;
@@ -74,7 +90,7 @@ a:hover {
   height: 9vw;
   width: 22vw;
   right: 1vw;
-  bottom: 18vw;
+  bottom: 9vw;
 }
 
 .skill-list > .container-fluid > h4 {
@@ -85,7 +101,14 @@ a:hover {
   margin-bottom: 1vw;
 }
 
-/* Contact page */
+/* ---------------------------------Contact page----------------------------- */
+
+.contact {
+  background-color: #1f2f46;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  /* margin-bottom: 10vw; */
+}
 
 #contact-form{
   display: flex;
@@ -93,6 +116,7 @@ a:hover {
   padding: 1.5vw;
   background-color: #fff;
   font-family: helveticaneue;
+  margin-right: 3vw;
 }
 
 #contact-form > * > * {
@@ -108,17 +132,63 @@ a:hover {
   background-color: #1f2f46;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 .this-page {
   text-decoration: none;
   border-bottom: 3px solid #f08560;
 }
 
-footer {
+/* ------------------------Footer---------------------------- */
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 18vh;
+  bottom:0;
   background-color: #1a2636;
-  height: 8vw;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
+.footer p {
+  margin-bottom: 0;
+  font-size: 0.9vw;
+  color:#727272;
+}
+
+.footer > .container > .row {
+  display: inline-block;
+}
+
+.footer-icon {
+  width: 2vw;
+}
+
+@media (max-width: 600px){
+  /* .footer {
+    height: 12vh;
+    bottom:0;
+    position: relative;
+  } */
+
+  .footer-icon {
+    width: 5vw;
+  }
+}
+
+
+
+
 
 .footer-link :hover {
   border-bottom: none !important;
