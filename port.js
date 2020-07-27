@@ -1,4 +1,4 @@
-
+//mouse move animation
 $(function() {
 
     $(window).on('wheel', function(e) {
@@ -38,6 +38,24 @@ $(document).ready(function(){
     $("a.footer-link").on("mouseleave",function(){
         $(this).find("path").css({fill:"#727272"});
     })
+
+
+    //update port page header dynamically?
+    var mainImages = [
+        { 
+            name : "eBay Mobile Redesign", 
+            url : "Assets/eBay/Mockup.png",
+            description: "I’m very passionate about buying used clothes so I use the eBay app every day. I quite often come across frustrating experiences as a user myself, so I decided I could create a project around redesigning the app myself. This redesign task aims to gather data to identify pain points and create user stories to inform a new design that will solve those pain points and modernise the app with current UI and UX trends."
+        }
+    ]
+
+    var thisHeader = mainImages[0].url
+    var thisProject = mainImages[0].name
+    var thisDescription = mainImages[0].description
+
+    $("#port-page-head").css({"background-image": "url(" + thisHeader + ")"});
+    $("#port-page-title").find("h1").html(thisProject);
+    $("#port-page-title").find("p").html(thisDescription);
 
 })
 

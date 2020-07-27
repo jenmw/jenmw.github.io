@@ -147,6 +147,38 @@ a:hover {
   border-bottom: 3px solid #f08560;
 }
 
+/* ------------------------Port Pages---------------------------- */
+
+#port-page-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-color: #1f2f46; */
+    height: calc(45rem + 10vw);
+    margin-bottom: 0;
+    /* background-size: clip; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#port-page-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 5rem;
+}
+
+.port-page-content{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 3rem 5rem;
+}
+
+
 /* ------------------------Footer---------------------------- */
 
 .footer {
@@ -175,11 +207,19 @@ a:hover {
 }
 
 @media (max-width: 600px){
-  /* .footer {
-    height: 12vh;
-    bottom:0;
-    position: relative;
-  } */
+  .footer {
+    height: 15vh;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .footer h5 {
+    font-size: 2vw;
+  }
+
+  .footer p {
+    font-size: 1.5vw;
+  }
 
   .footer-icon {
     width: 5vw;
