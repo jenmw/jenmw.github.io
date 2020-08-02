@@ -262,6 +262,14 @@ a:hover {
   .footer-icon {
     width: 5vw;
   }
+
+  .jumbotron > * > * > h2 {
+    position: relative;
+  }
+  
+  .jumbotron > * > * > h3 {
+    position: relative;
+  }
 }
 
 
