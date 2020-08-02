@@ -1,3 +1,4 @@
+
 //mouse move animation
 $(function() {
 
@@ -9,7 +10,13 @@ $(function() {
         else $(".skill-list").find("h4").css({"padding-bottom":0,transition: "1s ease-out"}); //skills come back down when you scroll up
     
         if (delta > 0) $(".skill-list").css({"bottom": 30+"vw","opacity":0,transition: "1s ease-out"}); //skills move up when you scroll down
-        else $(".skill-list").css({"bottom": (9+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
+        else $(".skill-list").css({"bottom": (8+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
+
+        if (delta > 0) $(".jumbotron").find("h2").css({"bottom": 30+"vw","opacity":0,transition: "1s ease-out"}); //hello moves up when you scroll down
+        else $(".jumbotron").find("h2").css({"bottom": (19+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
+
+        if (delta > 0) $(".jumbotron").find("h3").css({"bottom": 28+"vw","opacity":0,transition: "1s ease-out"}); //hello moves up when you scroll down
+        else $(".jumbotron").find("h3").css({"bottom": (16+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
     });
 });
 
@@ -39,23 +46,23 @@ $(document).ready(function(){
         $(this).find("path").css({fill:"#727272"});
     })
 
-
-    //update port page header dynamically?
-    var mainImages = [
-        { 
-            name : "eBay Mobile Redesign", 
-            url : "Assets/eBay/Mockup.png",
-            description: "I’m very passionate about buying used clothes so I use the eBay app every day. I quite often come across frustrating experiences as a user myself, so I decided I could create a project around redesigning the app myself. This redesign task aims to gather data to identify pain points and create user stories to inform a new design that will solve those pain points and modernise the app with current UI and UX trends."
-        }
-    ]
-
-    var thisHeader = mainImages[0].url
-    var thisProject = mainImages[0].name
-    var thisDescription = mainImages[0].description
-
-    $("#port-page-head").css({"background-image": "url(" + thisHeader + ")"});
-    $("#port-page-title").find("h1").html(thisProject);
-    $("#port-page-title").find("p").html(thisDescription);
-
+    //confetti test
+    var confettiElement = document.getElementById('testconfetti');
+    var confettiSettings = { 
+        target: confettiElement, 
+        animate: false,
+        max: 200,
+        // size: 1,
+        props: [
+            "circle", "square",
+            // { "type":"svg", "src":"Assets/wiggle.svg", "size":20 },
+            // { "type":"svg", "src":"Assets/circle.svg", "size":10 }
+        ],
+        colors: [[240,133,96],[255,255,255]],
+        rotate: true,
+    };
+    var confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+    
 })
 

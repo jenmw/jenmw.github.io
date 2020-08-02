@@ -34,6 +34,16 @@ header p {
     margin-bottom: 0;
 }
 
+.jumbotron > * > * > h2 {
+  position: absolute;
+  bottom: 19vw;
+}
+
+.jumbotron > * > * > h3 {
+  position: absolute;
+  bottom: 16vw;
+}
+
 .port-nav{
   padding-left: 0;
   padding-right: 0;
@@ -45,7 +55,7 @@ h1 {
 
 h2, h3, header p{
   color: #f08560;
-  font-family: helveticaneue;
+  font-family: "helveticaneue","heebo";
   font-weight: 1000;
 }
 
@@ -59,14 +69,14 @@ h3 {
 
 h5 {
   font-size:1vw;
-  font-family: helveticaneue;
+  font-family: "helveticaneue","heebo";
   font-weight: 1000;
   color:#727272;
 }
 
 .carousel-caption{
   font-size: calc(1rem + 1vw);
-  font-family: helveticaneue;
+  font-family: "helveticaneue","heebo";
   background-color: rgba(255, 255, 255, .8);;
   color: #1f2f46;
   text-shadow: none;
@@ -88,17 +98,26 @@ a:hover {
 .skill-list{
   position: absolute;
   height: 9vw;
-  width: 22vw;
-  right: 1vw;
-  bottom: 9vw;
+  width: 27vw;
+  right: 0;
+  bottom: 8vw;
 }
 
 .skill-list > .container-fluid > h4 {
-  color: #1a2636;
-  font-family: helveticaneue;
+  color: #162336;
+  font-family: "helveticaneue","heebo";
   font-weight: 800;
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin-bottom: 1vw;
+  text-align: right;
+}
+
+.text-shadow {
+  text-shadow:
+  -2px -2px 0 #1f2f46,  
+   2px -2px 0 #1f2f46,
+   -2px 2px 0 #1f2f46,
+    2px 2px 0 #1f2f46;
 }
 
 /* ---------------------------------Contact page----------------------------- */
@@ -107,7 +126,6 @@ a:hover {
   background-color: #1f2f46;
   padding-top: 4vw;
   padding-bottom: 4vw;
-  /* margin-bottom: 10vw; */
 }
 
 #contact-form{
@@ -115,7 +133,7 @@ a:hover {
   flex-wrap: wrap;
   padding: 1.5vw;
   background-color: #fff;
-  font-family: helveticaneue;
+  font-family: "helveticaneue","heebo";
   margin-right: 3vw;
 }
 
@@ -149,6 +167,16 @@ a:hover {
 
 /* ------------------------Port Pages---------------------------- */
 
+#testconfetti {
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.layer {
+  z-index: 2;
+}
+
 #port-page-head {
     position: relative;
     display: flex;
@@ -170,12 +198,22 @@ a:hover {
   padding: 5rem;
 }
 
+#port-page-title h1 {
+  font-family: "helveticaneue","heebo";
+  font-weight: 1000;
+}
+
 .port-page-content{
   position: relative;
   display: flex;
   align-items: center;
   height: auto;
   padding: 3rem 5rem;
+}
+
+#port-page-links {
+  margin-bottom: 3rem;
+  padding: 0 2rem;
 }
 
 
