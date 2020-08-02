@@ -252,11 +252,11 @@ a:hover {
   }
 
   .footer h5 {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .footer p {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 
   .footer-icon {
@@ -264,11 +264,15 @@ a:hover {
   }
 
   .jumbotron > * > * > h2 {
-    position: relative;
+    position: unset;
+    bottom: unset;
+    text-align: center;
   }
   
   .jumbotron > * > * > h3 {
-    position: relative;
+    position: unset;
+    bottom: unset;
+    text-align: center;
   }
 }
 
