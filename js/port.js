@@ -10,7 +10,7 @@ $(function() {
         else $(".skill-list").find("h4").css({"padding-bottom":0,transition: "1s ease-out"}); //skills come back down when you scroll up
     
         if (delta > 0) $(".skill-list").css({"bottom": 30+"vw","opacity":0,transition: "1s ease-out"}); //skills move up when you scroll down
-        else $(".skill-list").css({"bottom": (8+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
+        else $(".skill-list").css({"bottom": (14+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
 
         if (delta > 0) $(".jumbotron").find("h2").css({"bottom": 30+"vw","opacity":0,transition: "1s ease-out"}); //hello moves up when you scroll down
         else $(".jumbotron").find("h2").css({"bottom": (19+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
