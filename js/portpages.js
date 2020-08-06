@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $("a.footer-link").on("mouseenter",function(){
-        $(this).find("path").css({fill:"#f08560"});
+        $(this).find("path").css({fill:"#FE5E41"});
         $(this).css({"border-bottom":"none"});
     })
     $("a.footer-link").on("mouseleave",function(){
@@ -21,7 +21,7 @@ $(document).ready(function(){
             description: "‘Mathdominion’ is a children’s game in the fantasy genre that reinforces mathematical operations with quick-fire questions. This project is inspired by a similar game that I collaborated on within an in-house design team, however in the interest of keeping the in-house project separate to my portfolio I have changed all names, rewritten copy, omitted logos, restructured layouts and recreated all assets in my own style."
         },
         { 
-            name : "Logo for RHS Gold Medal Winning florist", 
+            name : "Logo design for RHS Gold Medal winning florist", 
             url : "../Assets/Enchanted/Mockup.png",
             description: "Hired to create a logo for an RHS Gold Medal winning wedding specialist in Pershore. It was a challenge to learn enough about floristry to capture the essence of the client, and I was really pleased with the result."
         }

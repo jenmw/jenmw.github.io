@@ -13,10 +13,10 @@ $(function() {
         else $(".skill-list").css({"bottom": (14+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
 
         if (delta > 0) $(".jumbotron").find("h2").css({"bottom": 30+"vw","opacity":0,transition: "1s ease-out"}); //hello moves up when you scroll down
-        else $(".jumbotron").find("h2").css({"bottom": (19+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
+        else $(".jumbotron").find("h2").css({"bottom": (26+"vh"), "opacity":1, transition: "1s ease-out"}); //hello come back down when you scroll up
 
-        if (delta > 0) $(".jumbotron").find("h3").css({"bottom": 28+"vw","opacity":0,transition: "1s ease-out"}); //hello moves up when you scroll down
-        else $(".jumbotron").find("h3").css({"bottom": (16+"vw"), "opacity":1, transition: "1s ease-out"}); //skills come back down when you scroll up
+        if (delta > 0) $(".jumbotron").find("h3").css({"bottom": 28+"vw","opacity":0,transition: "1s ease-out"}); //my name is moves up when you scroll down
+        else $(".jumbotron").find("h3").css({"bottom": (20+"vh"), "opacity":1, transition: "1s ease-out"}); //my name is come back down when you scroll up
     });
 });
 
@@ -39,7 +39,7 @@ $(document).ready(function(){
     })
 
     $("a.footer-link").on("mouseenter",function(){
-        $(this).find("path").css({fill:"#f08560"});
+        $(this).find("path").css({fill:"#FE5E41"});
         $(this).css({"border-bottom":"none"});
     })
     $("a.footer-link").on("mouseleave",function(){
@@ -50,15 +50,15 @@ $(document).ready(function(){
     var confettiElement = document.getElementById('testconfetti');
     var confettiSettings = { 
         target: confettiElement, 
-        animate: false,
-        max: 200,
+        animate: true,
+        max: 100,
         // size: 1,
         props: [
             "circle", "square",
             // { "type":"svg", "src":"Assets/wiggle.svg", "size":20 },
             // { "type":"svg", "src":"Assets/circle.svg", "size":10 }
         ],
-        colors: [[240,133,96],[255,255,255]],
+        colors: [[28,124,84],[115,226,167],[255,255,255]],
         rotate: true,
     };
     var confetti = new ConfettiGenerator(confettiSettings);
