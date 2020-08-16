@@ -1,0 +1,303 @@
+/* body {
+  padding-bottom: 18vw;
+} */
+
+header {
+  background-color: #161413;
+    padding: 0.5vw 0;
+  }
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+}
+
+header p {
+    padding: 0 2vw;
+    margin: 0;
+    font-size: calc(1rem + 0.8vw);
+}
+
+.jumbotron {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #161413;
+    height: 70vh;
+    margin-bottom: 0;
+}
+
+.jumbotron > * > * > h2 {
+  position: absolute;
+  bottom: 26vh;
+  left:11vw;
+}
+
+.jumbotron > * > * > h3 {
+  position: absolute;
+  bottom: 16vh;
+  left:12vw;
+}
+
+.port-nav{
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+
+/* .port-nav > * > img {
+  transition: .3s ease-in-out,
+} */
+
+h1 {
+  color: #161413;
+}
+
+h2, h3, header p{
+  color: #57CC99;
+  font-family: "heebo";
+  font-weight: 1000;
+}
+
+h2 {
+  font-size: 14vw;
+}
+
+h3 {
+  font-size: calc(2rem + 4vh);
+}
+
+h5 {
+  font-size:1.5vw;
+  font-family: "heebo";
+  font-weight: 1000;
+  color:#727272;
+}
+
+.carousel-caption{
+  font-size: calc(1rem + 1vw);
+  font-family: "heebo";
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, .8);;
+  color: #161413;
+  text-shadow: none;
+  width:100%;
+  left: 0;
+  bottom: 0;
+}
+
+a {
+  color: #57CC99;
+}
+
+a:hover {
+  color: #57CC99;
+  text-decoration: none;
+  border-bottom: 3px solid #57CC99;
+  transition: border-length 0.6s linear;
+}
+
+.skill-list{
+  position: absolute;
+  height: 9vw;
+  width: 27vw;
+  right: 0;
+  bottom: 11vw;
+}
+
+.skill-list > .container-fluid > h4 {
+  color: grey;
+  font-family: "heebo";
+  font-weight: 800;
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  text-align: right;
+}
+
+.text-shadow {
+  text-shadow:
+  -1px -1px 2px #161413,  
+   1px -1px 2px #161413,
+   -1px 1px 2px #161413,
+    1px 1px 2px #161413;
+}
+
+/* ---------------------------------Contact page----------------------------- */
+
+.contact {
+  background-color: #161413;
+  min-height: 75vh;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+#contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5vw;
+  background-color: #fff;
+  font-family: "heebo";
+  margin-right: 3vw;
+}
+
+#contact-form > * > * {
+  margin: 1%;
+}
+
+.btn-primary {
+  background-color: #57CC99;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1E855A;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.this-page {
+  text-decoration: none;
+  border-bottom: 3px solid #57CC99;
+}
+
+/* ------------------------Port Pages---------------------------- */
+
+#testconfetti {
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+  top: -20%;
+}
+
+.layer {
+  z-index: 2;
+}
+
+#port-page-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-color: #1D1A05; */
+    height: calc(45rem + 10vw);
+    margin-bottom: 0;
+    /* background-size: clip; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#port-page-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 5rem;
+}
+
+#port-page-title h1 {
+  font-family: "heebo";
+  font-weight: 1000;
+  margin-top: 0;
+}
+
+.port-page-content{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 3rem 5rem;
+}
+
+#port-page-links {
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+#port-page-links h3 {
+  font-size: calc(1rem + 2vw);
+}
+
+
+/* ------------------------Footer---------------------------- */
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 18vh;
+  bottom:0;
+  background-color: #0B0A09;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-size: 1.2vw;
+  color:#727272;
+}
+
+.footer > .container > .row {
+  display: inline-block;
+}
+
+.footer-icon {
+  width: 2vw;
+  margin-right: 3%;
+  margin-top: 1%;
+}
+
+@media (max-width: 600px){
+  .footer {
+    height: 19vh;
+    text-align: center;
+    padding: 0 2.5rem;
+  }
+
+  .footer h5 {
+    font-size: 3vw;
+  }
+
+  .footer p {
+    font-size: 2.5vw;
+  }
+
+  .footer-icon {
+    width: 5vw;
+  }
+
+  .jumbotron > * > * > h2 {
+    position: unset;
+    bottom: unset;
+    text-align: center;
+  }
+  
+  .jumbotron > * > * > h3 {
+    position: unset;
+    bottom: unset;
+    text-align: center;
+  }
+}
+
+
+
+
+
+.footer-link :hover {
+  border-bottom: none !important;
+}
