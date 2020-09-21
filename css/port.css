@@ -199,8 +199,18 @@ figcaption {
 }
 
 #port-page-title > * > * > * > p {
-  font-size: 1.2vw;
+  font-size: 1vw;
   padding-top: 4%;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #bf1938;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .port-page-content{
@@ -212,7 +222,12 @@ figcaption {
 }
 
 .port-page-content > * > * > * > p {
-  font-size: 1.1vw;
+  font-size: 1vw;
+}
+
+.port-page-content > * > * > * > h3 {
+  font-size: 2vw;
+  font-family: kreon;
 }
 
 .port-page-content > * > .row {
@@ -347,6 +362,20 @@ h5 {
   .footer-icon {
     width: 5vw;
     margin-left:3%;
+  }
+
+}
+
+/* ------------------------- Media query for laptop sizes */
+@media (max-width: 1400px){
+
+  #port-page-title > * > * > * > p {
+    font-size: 1.2vw;
+    padding-top: 4%;
+  }
+
+  .port-page-content > * > * > * > p {
+    font-size: 1.2vw;
   }
 
 }
