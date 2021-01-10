@@ -14,58 +14,98 @@
     <script src="js/port.js"></script>
 </head>
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid animated fadeIn delay-2s">
         <div class="row">
             <nav class="col-sm-12 layer">
-                <p><a class="this-page" href="test.html">Home</a></p>
-                <p><a class="cool-link">About</a></p>
-                <p><a class="cool-link" href="contact.html">Contact</a></p>
+                <p><a class="this-page" style="font-weight: bold;" href="index.html">Home</a></p>
+                <!-- <p><a class="cool-link" style="font-weight: bold;">About</a></p> -->
+                <p><a class="cool-link" style="font-weight: bold;" href="contact.html">Contact</a></p>
             </nav>
         </div>
     </header>
-    <section class="container text-center banner">
-        <div class="row">
+    <section class="container-fluid test-line animated fadeInRight delay-2s">
+        <!-- <div class="row">
             <div class="col-md-12">
                 <h1 class="animated fadeInUp">Hello there!</h1>
                 <p class="animated fadeIn delay-1s">My name is Jen. I'm a digital designer and brand coordinator, and I'm learning UX.</p>
             </div>
-        </div>
+        </div> -->
     </section>
-    <section class="container text-center" style="overflow:hidden">
+    <section class="container banner">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="animated fadeIn delay-2s">Projects</h2>
+                <h1 class="animated fadeInUp">Jen Warren</h1>
+                <p class="animated fadeIn delay-1s">Digital designer, brand coordinator, junior UX and games designer.</p>
             </div>
         </div>
+    </section>
+    <section class="container animated fadeIn delay-2s">
         <div class="row">
-            <div class="col-md-6">
-                <a href="Projects/ebay.html">
+            <div class="col-md-12">
+                <div class="dropdown">
+                    <button class="dropbtn">Filter: All</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a class="dropdown-item">All</a>
+                      <a class="dropdown-item">UX/UI</a>
+                      <a class="dropdown-item">Games</a>
+                      <a class="dropdown-item">Web Design</a>
+                      <a class="dropdown-item">Brand</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <a class="filter-all filter-uxui" href="Projects/ebay.html">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>eBay Redesign</h2>
+                <hr>
+                <h3>PERSONAL</h3>
+                <h4>2020</h4>
+            </div>
+            <div class="col-md-8">
                     <img class="img-responsive project-pic" src="Assets/eBay/Mockup.png">
-                    <figcaption class="caption-right">eBay Mobile App Redesign</figcaption>
-                </a>
-                
-            </div>
-            <div class="col-md-6 offset-down">
-                <a href="Projects/portfoliodesign.html">
-                    <img class="img-responsive project-pic" src="Assets/portDesign/Mockup2.png">
-                    <figcaption class="caption-left">Portfolio Web Design</figcaption>
-                </a>
             </div>
         </div>
+        </a>
+        <a class="filter-all filter-webdesign" href="Projects/portfoliodesign.html">
         <div class="row">
-            <div class="col-md-6">
-                <a href="Projects/mathdom.html">
-                    <img class="img-responsive project-pic" src="Assets/Mathdom/Mock-up-laptop.png">
-                    <figcaption class="caption-right">Mathdominion Landing Page</figcaption>
-                </a>
+            <div class="col-md-4">
+                <h2>Portfolio Design</h2>
+                <hr>
+                <h3>PERSONAL</h3>
+                <h4>2019</h4>
             </div>
-            <div class="col-md-6 offset-down">
-                <a href="Projects/enchanted.html">
-                    <img class="img-responsive project-pic" style="margin-bottom:1%" src="Assets/Enchanted/Main site.png">
-                    <figcaption class="caption-left">Enchanted Florist Logo Design</figcaption>
-                </a>
+            <div class="col-md-8">
+                    <img class="img-responsive project-pic" src="Assets/portDesign/Mockup2.png">
             </div>
         </div>
+        </a>
+        <a class="filter-all filter-uxui" href="Projects/mathdom-encrypted.html">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Mathdominion</h2>
+                    <hr>
+                    <h3>PERSONAL</h3>
+                    <h4>2018</h4>
+                </div>
+                <div class="col-md-8">
+                    <img class="img-responsive project-pic" src="Assets/Mathdom/Mock-up-laptop.png">
+                </div>
+            </div>
+        </a>
+        <a class="filter-all filter-brand" href="Projects/enchanted.html">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Enchanted Florist Logo Design</h2>
+                    <hr>
+                    <h3>CLIENT</h3>
+                    <h4>2017</h4>
+                </div>
+                <div class="col-md-8">
+                    <img class="img-responsive project-pic" src="Assets/Enchanted/Main site.png">
+                </div>
+            </div>
+        </a>
     </section>
 </body>
 <footer class="footer">
@@ -73,7 +113,7 @@
         <div class="row">
             <div class=col-sm-6>
                 <h5>Recruiting?</h5>
-                <p>Currently designing educational games, looking for new work in London to be closer to family and friends. Thinking of hiring me? Do it! Go on, I dare you!</p>
+                <p>Currently designing educational games, looking for work in London.</p>
             </div>
             <div class="col-sm-2"></div>
             <div class="col-sm-4">

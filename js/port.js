@@ -1,27 +1,29 @@
 $(document).ready(function(){
 
-    $("figcaption").hide(); //hide all captions on start
+    $(".dropbtn").on("click",function(){
+        document.getElementById("myDropdown").classList.toggle("show");
+    })
+    
+      
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
 
-    //-----Show main pic captions on hover-------------------------
-    $(".project-pic,figcaption").on("mouseenter", function(){
-        $(this).parent().find(".caption-right").addClass("animated fadeInLeft").show()
+    $(".dropdown-item").on("click",function(){
+      $(".filter-all").hide();
+      $(".filter-"+(this.innerHTML.trim().replaceAll(" ","").replaceAll("/","").toLowerCase())).show();
+      $(".dropbtn").html("Filter: "+ this.innerHTML);
     })
-    $(".project-pic,figcaption").on("mouseleave", function(){
-        $(this).parent().find(".caption-right").removeClass("animated fadeInLeft").hide()
-    })
-    $(".project-pic,figcaption").on("mouseenter", function(){
-        $(this).parent().find(".caption-left").addClass("animated fadeInRight").show()
-    })
-    $(".project-pic,figcaption").on("mouseleave", function(){
-        $(this).parent().find(".caption-left").removeClass("animated fadeInRight").hide()
-    })
-    // $("figcaption").on("mouseenter", function(){
-    //     $(this).removeClass("animated").show()
-    // })
-    // $("figcaption").on("mouseleave", function(){
-    //     $(this).hide()
-    // })
-    //end--------------------------------------------------------------
 
     //----Jump to section-------------------------------------------
     $("h4").on("click",function(){
@@ -36,7 +38,7 @@ $(document).ready(function(){
 
     //-----Footer SVG hyperlink colour on hover---------------------
     $("a.footer-link").on("mouseenter",function(){
-        $(this).find("path").css({fill:"#bf1938"}); //turn it pink
+        $(this).find("path").css({fill:"#F35353"}); //turn it pink
         $(this).css({"border-bottom":"none"});
     })
     $("a.footer-link").on("mouseleave",function(){
