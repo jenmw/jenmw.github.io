@@ -478,11 +478,11 @@ h5 {
   /* Main page stuff */
 
   h1 {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   h3 {
@@ -507,7 +507,7 @@ h5 {
 
   .banner {
     min-height: unset;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
 
   .offset-down {
