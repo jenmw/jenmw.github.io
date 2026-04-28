@@ -232,6 +232,7 @@ figcaption {
   align-items: center;
   width: 100%;
   aspect-ratio: 16 / 9;
+  max-height: 500px;
   margin-bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
