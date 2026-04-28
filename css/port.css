@@ -376,6 +376,28 @@ a:hover {
   background-color: #FFC65C;
 }
 
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.chip {
+  display: inline-block;
+  font-family: "heebo";
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  color: #fff;
+  background-color: #555;
+}
+
+.project-pic {
+  margin-top: 1.5rem;
+}
+
 .back-btn {
   display: inline-block;
   font-family: "heebo";
