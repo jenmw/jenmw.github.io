@@ -94,26 +94,26 @@ header a:hover {
 h1 {
     font-family: "heebo";
     font-weight: 600;
-    font-size: calc(3rem + 2vw);
+    font-size: 56px;
 }
 
 h2 {
     font-family: "heebo";
     font-weight: 600;
-    font-size: calc(1.2rem + 1vw);
+    font-size: 28px;
 }
 
 h3 {
   font-family: "heebo";
   font-weight: 600;
-  font-size: calc(.8rem + .5vw);
+  font-size: 20px;
   color: #333;
 }
 
 h4 {
   font-family: "heebo";
   font-weight: 600;
-  font-size: calc(1rem + .2vw);
+  font-size: 18px;
   color: grey;
 }
 
@@ -230,17 +230,16 @@ figcaption {
   position: relative;
   display: flex;
   align-items: center;
-  /* background-color: #1D1A05; */
-  height: calc(45rem + 10vw);
+  width: 100%;
+  aspect-ratio: 16 / 9;
   margin-bottom: 0;
-  /* background-size: clip; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 #port-page-title > * > * > * > h1 {
-  font-size: 4vw;
+  font-size: 36px;
   margin-top: 4%;
 }
 
@@ -360,7 +359,6 @@ a:hover {
 }
 
 .port-page-content > * > * > * > h3 {
-  font-size: 2vw;
   font-family: heebo;
 }
 
@@ -421,7 +419,7 @@ a:hover {
 
 #port-page-links h3 {
   font-family: "heebo";
-  font-size: calc(1rem + 2vw);
+  font-size: 20px;
 }
 
 #port-page-links a {
@@ -480,15 +478,31 @@ h5 {
   /* Main page stuff */
 
   h1 {
-    font-size: 14vw;
+    font-size: 32px;
   }
 
   h2 {
-    font-size: 7vw;
+    font-size: 22px;
   }
-    
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  #port-page-title > * > * > * > h1 {
+    font-size: 24px;
+  }
+
+  .port-page-content {
+    padding: 2rem 1.25rem;
+  }
+
   p {
-    font-size:unset;
+    font-size: 16px;
   }
 
   .banner {
