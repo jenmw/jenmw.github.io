@@ -510,6 +510,17 @@ h5 {
     padding: 2rem 1.25rem;
   }
 
+  .port-page-content > .container {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .research-plan {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   p {
     font-size: 16px;
   }
