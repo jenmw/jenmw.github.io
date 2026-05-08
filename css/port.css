@@ -558,21 +558,26 @@ h5 {
 
   .footer {
     height: auto;
-    text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
   }
-  
-  .footer h5 {
-    font-size: 3vw;
+
+  .footer > .container > .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
-  
+
   .footer p {
-    font-size: 2.5vw;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: left;
   }
-  
+
   .footer-icon {
-    width: 5vw;
-    margin-left:3%;
+    width: 28px;
+    margin-left: 1rem;
+    margin-right: 0;
   }
 
 }
