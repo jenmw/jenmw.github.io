@@ -1,170 +1,110 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:400,600,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kreon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <link href="../../css/port.css?v=2" rel="stylesheet" type="text/css">
-    <script src="../../js/port.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vibe coding prototype with Claude Code — Jen Gardner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="../../css/port.css" rel="stylesheet">
+    <script src="/js/nav.js"></script>
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row">
-            <nav class="col-sm-12 layer">
-                <p><a class="cool-link" style="font-weight: bold;" href="../../">Home</a></p>
-                <p><a class="cool-link" style="font-weight: bold;" href="../../contact/">Contact</a></p>
-            </nav>
+    <main class="project-page">
+        <div class="project-title">
+            <h1>Vibe coding prototype with Claude Code</h1>
         </div>
-    </header>
-    <section class="container-fluid test-line animated fadeInRight delay-2s"></section>
-    <section id="port-page-head" style="background-image: url(../../Assets/Claude-code.png)">
-        <div class="container-fluid"></div>
-    </section>
-    <section id="port-page-title" class="white-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Vibe coding prototype with Claude Code</h1>
+
+        <article class="project-article">
+            <img class="project-hero-img" src="../../Assets/Claude-code.png" alt="Vibe coding prototype with Claude Code">
+            <div class="project-body">
+                <p class="project-intro">The prototype was built collaboratively with my design manager, both of us pushing changes to a shared repo using Claude Code. I then took ownership of the research, designing and running the studies end to end. Our first foray into building fast prototypes with AI!</p>
+
+                <h3>The challenge</h3>
+                <p>Breakroom is a job platform for frontline workers, across retail, hospitality, logistics, care and more. These people are often time-poor and need help finding a job that not only pays well but respects them. We hypothesised that these users were arriving at a job listing from Google and having to wade through too much information to decide whether to apply. We prototyped a new experience designed to fix two things: helping workers feel confident making that decision, and making it quicker to find a better alternative when a job isn't right.</p>
+
+                <h3>The issues with the current site</h3>
+                <p>Information overload. There's a long job description that nobody likes to read but probably contains some important nuggets of information to decide whether to apply. And every Breakroom finding is given the same relevance and weighting, meaning there's too many accordions to open and you don't know where to start. The cognitive overload is too much.</p>
+
+                <div class="image-pair">
+                    <img src="../../Assets/JD.png" alt="">
+                    <img src="../../Assets/Findings.png" alt="">
                 </div>
+                <p class="img-caption">An example of how we were showing too much without an obvious direction of where to find what you need to decide whether to apply</p>
+
+                <h3>The plan</h3>
+                <p>We generated a three-study research plan. The studies used both qualitative sessions to see real behaviour, and a quantitative comparison to get statistically defensible numbers, with a final qualitative round after making changes to the prototype to confirm our findings and build a case for moving forward with the build.</p>
+                <table class="research-plan">
+                    <thead>
+                        <tr>
+                            <th>Study</th>
+                            <th>What it is</th>
+                            <th>Tool</th>
+                            <th>Participants</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="study-label">A: Explore</td>
+                            <td>Unmoderated video sessions — how people actually use the prototype</td>
+                            <td>UserBrain</td>
+                            <td>6–8 people</td>
+                        </tr>
+                        <tr>
+                            <td class="study-label">B: Compare</td>
+                            <td>Quantitative comparison: prototype vs breakroom.cc vs Indeed</td>
+                            <td>Maze</td>
+                            <td>90 people (30 per condition)</td>
+                        </tr>
+                        <tr>
+                            <td class="study-label">C: Validate</td>
+                            <td>Second video round to confirm findings and capture highlight clips</td>
+                            <td>UserBrain</td>
+                            <td>8–10 people</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Success criteria</h3>
+                <p>In every condition we asked a series of SUS usability score questions to be scored 0–100, and decided that a good result would be the prototype scoring above 68. An exceptional result would be above 80. We also wanted to see the task durations in the Maze test to measure whether the time to find an alternative role was measurably faster in the prototype. Exceptional would be 30% faster than on Breakroom or Indeed.</p>
+
+                <h3>Phase A, and the work planned from early insights</h3>
+                <p>Across six test sessions, the response to the product was consistently enthusiastic. Testers repeatedly described it as unlike anything they had encountered on existing job sites, with the Breakroom Take, pay comparison, and employee-first framing drawing the strongest reactions.</p>
+                <blockquote class="pull-quote">
+                    <p>"this [pay comparison] part is so immensely helpful. [commute time] is helpful too because I can easily check 'okay it takes too long to get there I don't want this job', and I like that you can set your priorities, I love it."</p>
+                    <cite>— Eleonora</cite>
+                </blockquote>
+                <blockquote class="pull-quote">
+                    <p>"I think the Breakroom Take is just such a good feature, and that's just the type of insight that you really need before you apply for a job, to me that's the gold in it all."</p>
+                    <cite>— Joanne</cite>
+                </blockquote>
+                <p>However, the dominant usability challenge was still cognitive load: four testers independently flagged the vacancy page was dense or overwhelming on first encounter, with feedback pointing to the need for clearer information hierarchy and more breathing room between sections. A related pattern emerged around some of the personalisation features, with users being unsure of the effect that adding their personalisation would have on the jobs they were seeing.</p>
+                <p>I time-boxed half a day to update the prototype to reflect some of these concerns, ready for Phase B.</p>
+                <img src="../../Assets/reduction-cognitive-load.png" alt="Reduction of cognitive load in prototype">
+                <p class="img-caption">An example of some very quick changes I made to a component in an effort to reduce cognitive load. It's still not perfect, but this was about making some quick and scrappy decisions</p>
+                <p>With the successful feedback from Phase A, we wanted to keep fast momentum. I worked with our Staff Software Engineer and Product Manager to break the prototype apart into components and together we mapped those out on an impact/effort chart. We identified that the pay insights feature was by far the highest impact and lowest effort component, so that was fast tracked to be the first thing we could build. We could also add it to vacancy pages as is, so it didn't rely on the new vacancy layout, which meant it was a quick win. We also worked out what features were actually likely to be larger projects that potentially required more engineering or design thinking.</p>
+                <img src="../../Assets/impact-effort.png" alt="Impact/effort chart in Figjam">
+                <p class="img-caption">Our Figjam to determine the most impactful feature we could build quickly</p>
+
+                <h3>Where it stopped</h3>
+                <p>Study A launched and ran successfully. I completed the setup for Study B in Maze, setting up the task flows for each condition and was in the process of using User Interviews to create a pool of participants when the project was cancelled.</p>
+                <p><strong>Why share a case study for a project that was cut short?</strong><br> Because the paths of quick agile teams don't always run smooth, and working in environments where projects get cut or reprioritised is something I've learned to be resilient for. I'm still extremely proud of the design work that went into this project and the partial completion still produced really useful insights.</p>
+
+                <h3>What I'd do differently</h3>
+                <p>If I ran this project again, and if I had a larger team to assist, then I'd push to launch Study B in parallel with Study A from day one rather than sequentially. We'd learn more, faster, and have both qualitative and quantitative results come in at the same time. I'd also consider running Phase B with a smaller pool to begin with, getting quick insights that might help to prove the concept and bring stakeholders on board faster.</p>
             </div>
-        </div>
-    </section>
-    <section class="port-page-content white-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="project-intro">The prototype was built collaboratively with my design manager, both of us pushing changes to a shared repo using Claude Code. I then took ownership of the research, designing and running the studies end to end. Our first foray into building fast prototypes with AI!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>The challenge</h3>
-                    <p>Breakroom is a job platform for frontline workers, across retail, hospitality, logistics, care and more. These people are often time-poor and need help finding a job that not only pays well but respects them. We hypothesised that these users were arriving at a job listing from Google and having to wade through too much information to decide whether to apply. We prototyped a new experience designed to fix two things: helping workers feel confident making that decision, and making it quicker to find a better alternative when a job isn't right.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>The issues with the current site</h3>
-                    <p>Information overload. There's a long job description that nobody likes to read but probably contains some important nuggets of information to decide whether to apply. And every Breakroom finding is given the same relevance and weighting, meaning there's too many accordions to open and you don't know where to start. The cognitive overload is too much.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6">
-                    <img src="../../Assets/JD.png" class="img-responsive">
-                </div>
-                <div class="col-xs-6">
-                    <img src="../../Assets/Findings.png" class="img-responsive">
-                </div>
-                <div class="col-xs-12">
-                    <p class="img-caption">An example of how we were showing too much without an obvious direction of where to find what you need to decide whether to apply</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>The plan</h3>
-                    <p>We generated a three-study research plan. The studies used both qualitative sessions to see real behaviour, and a quantitative comparison to get statistically defensible numbers, with a final qualitative round after making changes to the prototype to confirm our findings and build a case for moving forward with the build.</p>
-                    <table class="research-plan">
-                        <thead>
-                            <tr>
-                                <th>Study</th>
-                                <th>What it is</th>
-                                <th>Tool</th>
-                                <th>Participants</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="study-label">A: Explore</td>
-                                <td>Unmoderated video sessions — how people actually use the prototype</td>
-                                <td>UserBrain</td>
-                                <td>6–8 people</td>
-                            </tr>
-                            <tr>
-                                <td class="study-label">B: Compare</td>
-                                <td>Quantitative comparison: prototype vs breakroom.cc vs Indeed</td>
-                                <td>Maze</td>
-                                <td>90 people (30 per condition)</td>
-                            </tr>
-                            <tr>
-                                <td class="study-label">C: Validate</td>
-                                <td>Second video round to confirm findings and capture highlight clips</td>
-                                <td>UserBrain</td>
-                                <td>8–10 people</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>Success criteria</h3>
-                    <p>In every condition we asked a series of SUS usability score questions to be scored 0–100, and decided that a good result would be the prototype scoring above 68. An exceptional result would be above 80. We also wanted to see the task durations in the Maze test to measure whether the time to find an alternative role was measurably faster in the prototype. Exceptional would be 30% faster than on Breakroom or Indeed.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>Phase A, and the work planned from early insights</h3>
-                    <p>Across six test sessions, the response to the product was consistently enthusiastic. Testers repeatedly described it as unlike anything they had encountered on existing job sites, with the Breakroom Take, pay comparison, and employee-first framing drawing the strongest reactions.</p>
-                    <blockquote class="pull-quote">
-                        <p>"this [pay comparison] part is so immensely helpful. [commute time] is helpful too because I can easily check 'okay it takes too long to get there I don't want this job', and I like that you can set your priorities, I love it."</p>
-                        <cite>— Eleonora</cite>
-                    </blockquote>
-                    <blockquote class="pull-quote" style="margin-bottom: 3rem;">
-                        <p>"I think the Breakroom Take is just such a good feature, and that's just the type of insight that you really need before you apply for a job, to me that's the gold in it all."</p>
-                        <cite>— Joanne</cite>
-                    </blockquote>
-                    <p>However, the dominant usability challenge was still cognitive load: four testers independently flagged the vacancy page was dense or overwhelming on first encounter, with feedback pointing to the need for clearer information hierarchy and more breathing room between sections. A related pattern emerged around some of the personalisation features, with users being unsure of the effect that adding their personalisation would have on the jobs they were seeing.</p>
-                    <p>I time-boxed half a day to update the prototype to reflect some of these concerns, ready for Phase B.</p>
-                    <img src="../../Assets/reduction-cognitive-load.png" class="img-responsive" style="margin-top: 1.5rem;">
-                    <p class="img-caption" style="margin-bottom: 3.5rem;">An example of some very quick changes I made to a component in an effort to reduce cognitive load. It's still not perfect, but this was about making some quick and scrappy decisions</p>
-                    <p>With the successful feedback from Phase A, we wanted to keep fast momentum. I worked with our Staff Software Engineer and Product Manager to break the prototype apart into components and together we mapped those out on an impact/effort chart. We identified that the pay insights feature was by far the highest impact and lowest effort component, so that was fast tracked to be the first thing we could build. We could also add it to vacancy pages as is, so it didn't rely on the new vacancy layout, which meant it was a quick win. We also worked out what features were actually likely to be larger projects that potentially required more engineering or design thinking.</p>
-                    <img src="../../Assets/impact-effort.png" class="img-responsive" style="margin-top: 1.5rem;">
-                    <p class="img-caption">Our Figjam to determine the most impactful feature we could build quickly</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>Where it stopped</h3>
-                    <p>Study A launched and ran successfully. I completed the setup for Study B in Maze, setting up the task flows for each condition and was in the process of using User Interviews to create a pool of participants when the project was cancelled.</p>
-                    <p><strong>Why share a case study for a project that was cut short?</strong><br> Because the paths of quick agile teams don't always run smooth, and working in environments where projects get cut or reprioritised is something I've learned to be resilient for. I'm still extremely proud of the design work that went into this project and the partial completion still produced really useful insights.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>What I'd do differently</h3>
-                    <p>If I ran this project again, and if I had a larger team to assist, then I'd push to launch Study B in parallel with Study A from day one rather than sequentially. We'd learn more, faster, and have both qualitative and quantitative results come in at the same time. I'd also consider running Phase B with a smaller pool to begin with, getting quick insights that might help to prove the concept and bring stakeholders on board faster.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="port-page-links" class="white-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <a class="back-btn" href="../../">&#8592; Back</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </article>
+
+        <a class="back-btn project-back" href="/">&#8592; Back</a>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <p>UX designer with 5 years of experience in startup environments.</p>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://www.linkedin.com/in/jennifer-warren-design/" class="footer-link">
-                        <svg class="footer-icon" fill="#727272" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+        <div class="footer-inner">
+            <p>UX designer with 5 years of experience in startup environments.</p>
+            <a href="https://www.linkedin.com/in/jennifer-warren-design/" class="footer-link">
+                <svg class="footer-icon" fill="#727272" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z"/></svg>
+            </a>
         </div>
     </footer>
 </body>
+</html>
