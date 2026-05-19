@@ -18,9 +18,9 @@ body {
     background-size: 24px 24px;
 }
 
-h1 { font-family: "Roboto", sans-serif; font-weight: 600; font-size: 56px; line-height: 64px; color: #2F2F2F; margin: 0 0 0.5rem; }
-h2 { font-family: "Roboto", sans-serif; font-weight: 600; font-size: 40px; line-height: 48px; color: #2F2F2F; }
-h3 { font-family: "Roboto", sans-serif; font-weight: 600; font-size: 24px; line-height: 32px; color: #2F2F2F; }
+h1 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 56px; line-height: 64px; color: #2F2F2F; margin: 0 0 0.5rem; }
+h2 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 40px; line-height: 48px; color: #2F2F2F; }
+h3 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 24px; line-height: 32px; color: #2F2F2F; }
 h4 { font-family: "Roboto", sans-serif; font-weight: 600; font-size: 20px; line-height: 28px; color: #6B6B6B; }
 h5 { font-family: "Roboto", sans-serif; font-size: 16px; line-height: 24px; color: #727272; }
 p  { font-family: "Roboto", sans-serif; font-size: 16px; line-height: 22px; color: #2F2F2F; }
@@ -90,6 +90,7 @@ header nav a {
 }
 
 .hero-subheading {
+    font-family: "Roboto Slab", serif;
     font-style: italic;
     color: #EA8807;
     font-size: 32px;
