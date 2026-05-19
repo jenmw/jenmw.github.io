@@ -211,8 +211,8 @@ header nav a {
 .chip {
     display: inline-block;
     font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     padding: 0.25rem 0.75rem;
     border-radius: 999px;
     color: #2F2F2F;
@@ -308,37 +308,6 @@ header nav a {
     font-style: italic;
 }
 
-.contact {
-    min-height: 75vh;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-}
-
-#contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1vw;
-    background-color: #fff;
-    font-family: "Roboto", sans-serif;
-    border-radius: 10px;
-}
-
-#contact-form > * > * { margin: 1%; }
-
-.avatar { padding: 3%; }
-
-.contact-white-bg {
-    background-color: #fff;
-    padding: 1%;
-    border-radius: 15px;
-    margin: 0 7%;
-    height: unset;
-}
-
-.btn-primary { background-color: #EA8807; border: none; font-size: calc(1em + 1vw); }
-.btn-primary:hover { background-color: #c27006; }
-
-#contact-form > * > textarea { height: 100%; }
 
 /* ============================================================
    PROJECT PAGES
@@ -413,14 +382,6 @@ header nav a {
     padding: 0 0 3rem;
 }
 
-.project-intro {
-    font-size: 1.1rem;
-    color: #6B6B6B;
-    border-left: 3px solid #EA8807;
-    padding-left: 1.25rem;
-    margin-bottom: 1rem;
-    line-height: 1.7;
-}
 
 .case-summary {
     background: #fff;
@@ -548,12 +509,5 @@ header nav a {
     .image-pair img { width: 100%; }
     .research-plan { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
-    /* Contact page */
-    .contact-white-bg { height: 82vh; }
-    #contact-form > * > textarea { height: 50%; }
 }
 
-@media (max-width: 1400px) {
-    #port-page-title > * > * > * > p  { font-size: 1.2vw; }
-    .port-page-content > * > * > * > p { font-size: 16px; }
-}
