@@ -354,6 +354,7 @@ header nav a {
 
 .project-body > * + * { margin-top: 1.5rem; }
 .project-body > h3 { margin-top: 5.5rem; }
+.project-body > h3.brief-heading { margin-top: 2rem; }
 
 .project-body img {
     width: 100%;
