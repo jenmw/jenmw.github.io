@@ -111,19 +111,33 @@ header nav a {
     margin-bottom: 3rem;
 }
 
-.about-label {
+.about-label,
+.about-card .about-label {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     color: #888;
     margin: 0 0 1rem;
+    font-family: "Roboto", sans-serif;
 }
 
 .about-card p { color: #2F2F2F; margin-bottom: 1rem; }
 .about-card p:last-child { margin-bottom: 0; }
 .about-card a { color: #EA8807; }
 .about-card a:hover { color: #c27006; }
+
+.phrase-highlight {
+    background: linear-gradient(#E4F2FB, #E4F2FB) no-repeat left center;
+    background-size: 0% 100%;
+    border-radius: 3px;
+    padding: 0 3px;
+    transition: background-size 0.8s ease;
+}
+
+.phrase-highlight.is-highlighted {
+    background-size: 100% 100%;
+}
 
 /* ============================================================
    CASE STUDIES
@@ -165,7 +179,14 @@ header nav a {
     justify-content: space-between;
 }
 
-.project-meta h3 { margin: 0 0 8px; }
+.project-meta h3 { margin: 0 0 6px; }
+
+.project-subtitle {
+    font-size: 15px;
+    color: #6B6B6B;
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
 
 .project-image { flex: 1; display: flex; align-items: center; }
 .project-image img { width: 100%; display: block; border-radius: 4px; }
@@ -270,6 +291,16 @@ header nav a {
     padding: 3rem 0 2rem;
 }
 
+.project-title-sub {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+    font-style: italic;
+    color: #EA8807;
+    margin: 0.5rem 0 0;
+    font-family: "Roboto Slab", serif;
+}
+
 .project-article {
     background: #fff;
     border-radius: 8px;
@@ -327,6 +358,44 @@ header nav a {
     padding-left: 1.25rem;
     margin-bottom: 1rem;
     line-height: 1.7;
+}
+
+.case-summary {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.case-summary-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #888;
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.case-summary p {
+    margin: 0;
+    color: #2F2F2F;
+    line-height: 1.7;
+}
+
+.case-summary ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.case-summary li {
+    color: #2F2F2F;
+    line-height: 1.6;
 }
 
 .research-plan {
