@@ -163,6 +163,7 @@ header nav a {
     transition: transform 0.3s, box-shadow 0.3s;
     text-decoration: none;
     color: #2F2F2F;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -472,6 +473,35 @@ header nav a {
 .back-btn:hover { color: #EA8807; text-decoration: none; }
 
 /* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 900px) {
+    .project-card {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .project-info {
+        flex: none;
+        width: 100%;
+        padding: 1.5rem 1.5rem 2rem;
+    }
+
+    .project-image {
+        order: -1;
+        width: 100%;
+    }
+
+    .project-image img {
+        border-radius: 0;
+        max-height: 280px;
+        object-fit: cover;
+    }
+}
+
+/* ============================================================
    MOBILE
    ============================================================ */
 
@@ -489,15 +519,9 @@ header nav a {
 
     .about-card { padding: 1.5rem; }
 
-    .project-card {
-        flex-direction: column;
-        gap: 1.25rem;
-        padding: 1.5rem;
-    }
+    .project-image img { max-height: 200px; }
 
-    .project-info { flex: none; width: 100%; }
-
-    .footer-inner { padding: 0; }
+    .footer-inner { padding: 0 1.25rem; }
     .footer p     { font-size: 14px; }
     .footer-icon  { width: 28px; }
 
@@ -508,6 +532,5 @@ header nav a {
     .image-pair { flex-direction: column; }
     .image-pair img { width: 100%; }
     .research-plan { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-
 }
 
