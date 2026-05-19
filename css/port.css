@@ -378,6 +378,49 @@ header nav a {
 
 .col-group > * { flex: 1; }
 
+.brief-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.brief-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #888;
+    margin: 0 0 0.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.tension-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.tension-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.tension-number {
+    color: #EA8807;
+    font-weight: 700;
+    flex-shrink: 0;
+    line-height: 22px;
+}
+
+.tension-heading {
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    color: #2F2F2F;
+}
+
 .project-back {
     display: inline-block;
     padding: 0 0 3rem;
