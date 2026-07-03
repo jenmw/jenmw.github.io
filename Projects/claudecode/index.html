@@ -6,10 +6,11 @@
     <title>Redesigning the Breakroom job listing from the ground up — Jen Gardner</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link href="../../css/port.css?v=2" rel="stylesheet">
+    <link href="../../css/port.css?v=5" rel="stylesheet">
     <script src="/js/nav.js"></script>
     <script src="/js/footer.js"></script>
     <script src="/js/highlights.js"></script>
+    <script src="/js/image-modal.js" defer></script>
 </head>
 <body>
     <main class="project-page">
@@ -48,17 +49,16 @@
                 </div>
 
                 <h3>My role</h3>
-                <p>I built the prototype collaboratively, both of us pushing changes to a shared repo using Claude Code. I then owned the research end-to-end: using AI to generate a three-part research plan, running Phase A using UserBrain, and Phase B fully set up in Maze before the project was cancelled.</p>
+                <p>I built the prototype collaboratively with a colleague, both of us pushing changes to a shared repo using Claude Code. I then owned the research end-to-end: using AI to generate a three-part research plan, running Phase A using UserBrain, and Phase B fully set up in Maze before the project was cancelled.</p>
 
                 <h3>The problem</h3>
                 <p>Breakroom is a job platform for frontline workers across retail, hospitality, logistics, and care. These users are often time-poor, browsing on mobile, making quick decisions about whether a job is worth their time. Our vacancy pages weren't set up to help them do that.</p>
                 <p>The core issue was information overload. Job descriptions that nobody likes to read but might contain something critical. Breakroom findings all displayed with equal weight. Too many accordions to open, no signal about where to start.</p>
 
-                <div class="image-pair">
-                    <img src="../../Assets/JD.png" alt="">
-                    <img src="../../Assets/Findings.png" alt="">
+                <div class="img-expand" tabindex="0" role="button" aria-label="View full annotated vacancy page">
+                    <img src="../../Assets/old-vacancy-page.png" alt="Annotated screenshot of the old Breakroom vacancy page showing information overload">
+                    <span class="img-expand-hint">Click to view full annotations</span>
                 </div>
-                <p class="img-caption">An example of how we were showing too much without an obvious direction of where to find what you need to decide whether to apply</p>
 
                 <h3>How I approached it</h3>
                 <p>The first move was building something testable fast. Rather than waiting for engineering time, I used Claude Code to build a working, interactive prototype, collaborating with a colleague on a shared repo. This let us get a realistic redesign in front of real users within days, not weeks, and meant research could start before any production work began.</p>
@@ -126,6 +126,13 @@
 
         <a class="back-btn project-back" href="/">&#8592; Back</a>
     </main>
+
+    <div class="img-modal" id="img-modal" hidden>
+        <button class="img-modal-close" aria-label="Close">&times;</button>
+        <div class="img-modal-content">
+            <img src="" alt="">
+        </div>
+    </div>
 
 </body>
 </html>
