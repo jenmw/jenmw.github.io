@@ -474,6 +474,8 @@ header nav a {
     margin: 0;
 }
 
+.project-body > .subsection-heading { margin-top: 3.5rem; }
+
 .tension-list {
     display: flex;
     flex-direction: column;
