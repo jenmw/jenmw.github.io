@@ -421,7 +421,7 @@ header nav a {
 
 .img-modal[hidden] { display: none; }
 
-.img-modal-content { width: 100%; }
+.img-modal-content { width: 100%; max-width: 900px; }
 
 .img-modal-content img { width: 100%; margin: 0; display: block; border-radius: 4px; }
 
