@@ -585,6 +585,27 @@ header nav a {
 
 .back-btn:hover { color: #EA8807; text-decoration: none; }
 
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #2F2F2F;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.cta-btn:hover { background-color: #EA8807; color: #fff; text-decoration: none; }
+
+.cta-btn-icon { flex-shrink: 0; }
+
+.project-body > .cta-btn { margin-top: 0.5rem; }
+
 /* ============================================================
    TABLET
    ============================================================ */
