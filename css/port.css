@@ -210,7 +210,7 @@ header nav a {
 
 .card-shell:hover {
     --fold: 60px;
-    transform: rotate(-0.75deg);
+    transform: rotate(-0.5deg);
 }
 
 .project-card {
