@@ -198,26 +198,113 @@ header nav a {
    PROJECT CARDS
    ============================================================ */
 
+/* Card shell: wraps the card link plus the folded-corner layers below.
+   --fold drives the whole effect — 0 at rest, animated up on hover. */
+.card-shell {
+    position: relative;
+    margin-bottom: 2rem;
+    --fold: 0px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.card-shell:hover {
+    --fold: 60px;
+    transform: rotate(-0.75deg);
+}
+
 .project-card {
+    position: relative;
+    z-index: 1;
     display: flex;
     gap: 2rem;
     align-items: stretch;
     background: #fff;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
     border-radius: 8px;
     padding: 32px 32px 40px 32px;
-    margin-bottom: 2rem;
-    transition: transform 0.3s, box-shadow 0.3s;
     text-decoration: none;
     color: #2F2F2F;
     overflow: hidden;
+    clip-path: polygon(0 0, calc(100% - var(--fold)) 0, 100% var(--fold), 100% 100%, 0 100%);
+    transition: clip-path 0.35s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.015);
-    box-shadow: 0 6px 24px rgba(0,0,0,0.13);
     text-decoration: none;
     color: #2F2F2F;
+}
+
+/* Ambient card shadow as two plain box-shadow rectangles tiling an "L" shape
+   that excludes the folded corner, rather than one shadow on the clipped
+   card — box-shadow ignores clip-path entirely (it always traces the full
+   box), so a shadow on the card itself would ghost inside the fold. */
+.card-shadow-a,
+.card-shadow-b {
+    position: absolute;
+    background: transparent;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    pointer-events: none;
+    z-index: 0;
+    transition: top 0.35s ease, right 0.35s ease, height 0.35s ease, box-shadow 0.3s ease;
+}
+
+.card-shadow-a { top: var(--fold); left: 0; right: 0; bottom: 0; border-radius: 0 0 8px 8px; }
+.card-shadow-b { top: 0; left: 0; right: var(--fold); height: var(--fold); border-radius: 8px 0 0 0; }
+
+/* Deeper elevation shadow on hover — the blur radius (22px) is kept well
+   under the fold size (60px) so it fades out before ever reaching the
+   flap's edge, rather than smudging into the folded corner. */
+.card-shell:hover .card-shadow-a,
+.card-shell:hover .card-shadow-b {
+    box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+}
+
+/* The shadow the folded corner casts onto the card, mirroring the fold line
+   so its near edge lines up with the flap's diagonal exactly. The far
+   corner is a plain box corner (not calc-pinned) so border-radius can round
+   it. Fades in on a short delay so it settles in just after the fold does. */
+.fold-shadow {
+    --margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(var(--fold) + var(--margin));
+    height: calc(var(--fold) + var(--margin));
+    clip-path: polygon(calc(100% - var(--fold)) 0, 100% var(--fold), 0% 100%);
+    border-radius: 0 0 0 8px;
+    background: radial-gradient(circle at calc(100% - var(--fold) * 0.5) calc(var(--fold) * 0.5),
+        rgba(60,55,50,0.16) 0%,
+        rgba(60,55,50,0.07) 50%,
+        rgba(60,55,50,0) 80%);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    transition: width 0.35s ease, height 0.35s ease, opacity 0.2s ease;
+}
+
+.card-shell:hover .fold-shadow {
+    opacity: 1;
+    transition: width 0.35s ease, height 0.35s ease, opacity 0.2s ease 0.2s;
+}
+
+/* The folded-back corner itself: a flat pale triangle mirrored across the
+   same diagonal as the notch, landing on the card's surface. Its inner tip
+   (floating on the card, not on any real card edge) gets a small radius,
+   like a softly curled paper corner. The mirrored notch above it is left
+   genuinely empty — nothing is drawn there — so the page background/grid
+   shows through exactly, rather than an approximated fill color. */
+.fold-flap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--fold);
+    height: var(--fold);
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    border-radius: 0 0 0 6px;
+    background: #FCFCFC;
+    pointer-events: none;
+    z-index: 2;
+    transition: width 0.35s ease, height 0.35s ease;
 }
 
 .project-info {
