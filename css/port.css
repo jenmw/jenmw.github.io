@@ -702,12 +702,11 @@ header nav a {
     h2 { font-size: 32px; line-height: 40px; }
     h3 { font-size: 24px; line-height: 32px; }
     h4 { font-size: 20px; line-height: 28px; }
-    .hero-subheading { font-size: 16px; line-height: 24px; }
 
     .page-content { width: 100%; padding: 0 1.25rem 3rem; }
 
     .hero { padding: 2rem 0 1.5rem; }
-    .hero-subheading { font-size: 17px; }
+    .hero-subheading { font-size: 17px; line-height: 24px; }
     .project-title-sub { font-size: 17px; line-height: 24px; }
 
     .about-card { padding: 1.5rem; }
