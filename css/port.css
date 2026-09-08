@@ -371,8 +371,8 @@ header nav a {
 }
 
 .project-title-sub {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 40px;
     font-weight: 400;
     font-style: italic;
     color: #EA8807;
@@ -708,6 +708,7 @@ header nav a {
 
     .hero { padding: 2rem 0 1.5rem; }
     .hero-subheading { font-size: 17px; }
+    .project-title-sub { font-size: 17px; line-height: 24px; }
 
     .about-card { padding: 1.5rem; }
 
