@@ -22,10 +22,11 @@
         <div class="case-summary">
             <span class="case-summary-label">Summary</span>
             <ul>
-                <li>Breakroom's vacancy pages gave frontline job-seekers no personalised context and no clear signal about what mattered — information overload at the exact moment of decision.</li>
-                <li>I built a fully interactive prototype using <span class="phrase-highlight">Claude Code</span>, collaborating closely with a colleague on a shared repo — giving us something real to test before committing any engineering time. I then designed and owned the <span class="phrase-highlight">end-to-end research</span>: a three-study mixed-methods plan.</li>
+                <li>Breakroom's vacancy pages didn't give frontline job-seekers enough personalised context and signals about what mattered, causing information overload at the moment of decision.</li>
+                <li>I built a fully interactive prototype using <span class="phrase-highlight">Claude Code</span>, pairing with a colleague on a shared repo. We developed something to test quickly, before committing any engineering time.</li>
+                <li>I then took over planning and running research, developing a three-study mixed-methods plan.</li>
                 <li>I worked with a principal engineer to map the prototype into a <span class="phrase-highlight">prioritised delivery roadmap</span>, with pay insights fast-tracked as the <span class="phrase-highlight">highest-impact, lowest-effort win</span>.</li>
-                <li>The project was deprioritised due to a team restructure, but the early research findings showed strong qualitative signals and the roadmap remains ready to be picked up.</li>
+                <li>The project was deprioritised due to a team restructure, but the early research findings showed strong qualitative signals and the roadmap was ready to be picked up.</li>
             </ul>
         </div>
 
@@ -54,6 +55,7 @@
                 <h2>The problem</h2>
                 <p>Breakroom is a job platform for frontline workers across retail, hospitality, logistics, and care. These users are often time-poor, browsing on mobile, making quick decisions about whether a job is worth their time. Our vacancy pages weren't set up to help them do that.</p>
                 <p>The core issue was information overload. Job descriptions that nobody likes to read but might contain something critical. Breakroom findings all displayed with equal weight. Too many accordions to open, no signal about where to start.</p>
+                <p>You can expand my full annotation of what was wrong with the old page below:</p>
 
                 <div class="img-expand" tabindex="0" role="button" aria-label="View full annotated vacancy page">
                     <img src="../../Assets/old-vacancy-page.webp" alt="Annotated screenshot of the old Breakroom vacancy page showing information overload" loading="lazy">
@@ -72,6 +74,7 @@
                     <li>It's very clear if the position requires or prefers a specific qualification, or a length of time in service.</li>
                 </ul>
                 <p>If any of those things don't fit, it's easy to twist onto something else, because the options on the left highlight jobs that pay more by default, and the user can add their own personalisation for things that matter most to them, e.g. jobs that are good for students, or jobs with highly rated managers.</p>
+                <p>Take a look at the initial redesign, with annotations below:</p>
                 <div class="img-expand" tabindex="0" role="button" aria-label="View full annotated redesigned vacancy page">
                     <img src="../../Assets/redesigned-vacancy.webp" alt="Annotated screenshot of the redesigned Breakroom vacancy page" loading="lazy">
                     <span class="img-expand-hint">Click to view full annotations</span>
@@ -88,7 +91,7 @@
                 <img src="../../Assets/job-priorities-personalisation.webp" alt="Annotated screenshot of the job priorities personalisation flow" loading="lazy">
 
                 <h2>Testing</h2>
-                <p>With something real to test, I designed a three-study mixed-methods research plan:</p>
+                <p>Now we had something real to test, so I designed a three-study mixed-methods research plan:</p>
                 <table class="research-plan">
                     <thead>
                         <tr>
@@ -101,9 +104,9 @@
                     <tbody>
                         <tr>
                             <td class="study-label">A: Explore</td>
-                            <td>Unmoderated video sessions — how people actually use the prototype</td>
+                            <td>Unmoderated video sessions: how people actually use the prototype</td>
                             <td>UserBrain</td>
-                            <td>6–8 people</td>
+                            <td>6-8 people</td>
                         </tr>
                         <tr>
                             <td class="study-label">B: Compare</td>
@@ -115,13 +118,13 @@
                             <td class="study-label">C: Validate</td>
                             <td>Second video round to confirm findings and capture highlight clips</td>
                             <td>UserBrain</td>
-                            <td>8–10 people</td>
+                            <td>8-10 people</td>
                         </tr>
                     </tbody>
                 </table>
 
                 <h2>Phase A findings</h2>
-                <p>Across six sessions, response to the prototype was consistently enthusiastic. Testers described it as unlike anything they'd seen on existing job sites — the Breakroom Take, pay comparison, and employee-first framing drew the strongest reactions.</p>
+                <p>Across six sessions, response to the prototype was consistently enthusiastic. Testers described it as unlike anything they'd seen on existing job site. The Breakroom Take, pay comparison, and employee-first framing drew the strongest reactions.</p>
                 <blockquote class="pull-quote">
                     <p>"this [pay comparison] part is so immensely helpful. [commute time] is helpful too because I can easily check 'okay it takes too long to get there I don't want this job', and I like that you can set your priorities, I love it."</p>
                     <cite>— Eleonora</cite>
@@ -130,22 +133,26 @@
                     <p>"I think the Breakroom Take is just such a good feature, and that's just the type of insight that you really need before you apply for a job, to me that's the gold in it all."</p>
                     <cite>— Joanne</cite>
                 </blockquote>
-                <p>The dominant usability challenge remained cognitive load: four testers independently flagged the page as dense or overwhelming on first encounter. The feedback pointed clearly to information hierarchy and spacing. A secondary pattern emerged around personalisation — users were unsure what effect setting their preferences would actually have.</p>
+                <p>One usability challenge remained: four testers independently flagged the page as dense or overwhelming on first encounter. This is a problem that comes up a lot for me when designing with Claude, I really need to be quite specific about adding breathing room between sections. Annoying, but easy to fix. I simply adding more spacing between sections.</p>
+                <p>A second issue also emerged around personalisation. Users were unsure what effect setting their preferences would actually have, so I went through and updated some of the copy around the personalisation, and actually removed some of the avenues in that seems to trip people up the most.</p>
                 <h2>Iterating before Phase B</h2>
-                <p>Phase A gave me enough to act on without waiting for a full analysis. I time-boxed half a day to make targeted hierarchy changes to the prototype — not a redesign, just the most obvious friction points addressed. The goal was to give Phase B's quantitative comparison a fairer shot.</p>
+                <p>Phase A gave me enough to act on without waiting for a full analysis. I time-boxed half a day to make targeted hierarchy changes to the prototype. Not a big redesign, just the most obvious friction points addressed. The goal was to give Phase B's quantitative comparison a fairer shot.</p>
                 <img src="../../Assets/reduction-cognitive-load.png" alt="Reduction of cognitive load in prototype" loading="lazy">
-                <p class="img-caption">Targeted changes made after Phase A — reducing visual weight and improving scan order on the key decision components.</p>
+                <p class="img-caption">One of the quick targeted changes made after Phase A, to reduce weight overall and keep this section to a tighter focus for better scanability.</p>
                 <h2>Translating research to the roadmap</h2>
-                <p>With Phase A's signal established, I worked with our Principal Software Engineer and Product Manager to map the prototype into a prioritised delivery roadmap. I broke it into components, ran an impact/effort exercise with the team, and together we identified pay insights as the clear first build. Highest impact, lowest effort, and uniquely it could be added to existing vacancy pages without requiring the new layout. That made it a standalone quick win.</p>
+                <p>With Phase A's signal established, I worked with our Principal Software Engineer and Product Manager to map the prototype into a prioritised delivery roadmap.</p>
+                <p>I broke it into components, ran an impact/effort exercise with the team, and together we identified pay insights as the clear first build. Highest impact, lowest effort, and uniquely it could be added to existing vacancy pages without requiring the new layout. That made it a standalone quick win.</p>
                 <img src="../../Assets/impact-effort.png" alt="Impact/effort chart in Figjam" loading="lazy">
                 <p class="img-caption">Our Figjam to determine the most impactful feature we could build quickly</p>
 
                 <h2>Where it stopped</h2>
-                <p>Phase A ran to completion. I'd fully set up Phase B in Maze — task flows built for each condition, participant pool being assembled via User Interviews — when the project was cancelled due to a team restructure.</p>
-                <p>Projects get cut, and this one was well underway. It's frustrating, but working in fast-changing environments is something I've learned to be resilient for. I'm still immensely proud of the validated qualitative findings, the speed at which we generated a fully interactive prototype, and a prioritised roadmap.</p>
+                <p>Phase A ran to completion, and I'd fully set up Phase B in Maze, with task flows built for each condition, and the participant pool being assembled via User Interviews. The project was unfortunately cancelled due to a team restructure.</p>
+                <p>Projects get cut, it's frustrating, but working in startups has taught me how to deal with fast-changing environments and reacting quickly to changes in focus. It's something I've learned to be resilient for.</p>
+                <p>I'm still immensely proud of the validated qualitative findings, the speed at which we generated a fully interactive prototype, and a prioritised roadmap.</p>
 
                 <h2>What I'd do differently</h2>
-                <p>With hindsight we could have run Phase B in parallel with Phase A rather than sequentially. Getting qualitative and quantitative data simultaneously would have produced richer findings faster, and a stronger internal case for continuing. I'd also consider a smaller Phase B sample to start, quicker to run, enough to demonstrate proof of concept, and a better hook for stakeholder buy-in before committing to the full study.</p>
+                <p>With hindsight, we probably could have run Phase B in parallel with Phase A rather than sequentially. We wouldn't have been able to make those timeboxed changes, but we would have gained the ability to get qualitative AND quantitative data simultaneously to produce richer findings faster, and a stronger internal case for continuing.</p>
+                <p>I'd also consider a smaller Phase B sample to start, quicker to run, enough to demonstrate proof of concept, and a better hook for stakeholder buy-in before committing to the full study.</p>
 
                 <h2>Try it for yourself</h2>
                 <p>The full prototype is available here for you to try out the job discovery and personalisation features.</p>
