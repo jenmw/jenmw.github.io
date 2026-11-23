@@ -61,8 +61,6 @@ body {
 h1 { font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 56px; line-height: 64px; color: #2F2F2F; margin: 0 0 0.5rem; }
 h2 { font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 40px; line-height: 48px; color: #2F2F2F; }
 h3 { font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 24px; line-height: 32px; color: #2F2F2F; }
-h4 { font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 20px; line-height: 28px; color: #6B6B6B; }
-h5 { font-family: "Work Sans", sans-serif; font-size: 16px; line-height: 24px; color: #727272; }
 p  { font-family: "Work Sans", sans-serif; font-size: 18px; line-height: 24px; color: #2F2F2F; }
 
 ul {
@@ -191,9 +189,6 @@ header nav a {
    ABOUT CARD
    ============================================================ */
 
-.about-card {
-    margin-bottom: 3rem;
-}
 
 /* Shared small-caps-style section label, used by .about-label,
    .contact-method-label, .brief-label and .case-summary-label. */
@@ -235,7 +230,7 @@ header nav a {
    ============================================================ */
 
 .section-heading {
-    margin: 0 0 1.5rem;
+    margin: 5rem 0 1.5rem;
 }
 
 /* ============================================================
@@ -361,7 +356,7 @@ header nav a {
 .project-meta h3 { margin: 0 0 6px; }
 
 .project-subtitle {
-    font-size: 15px;
+    font-size: 14px;
     color: #6B6B6B;
     margin: 0 0 12px;
     line-height: 1.5;
@@ -524,8 +519,16 @@ header nav a {
 }
 
 .project-body > * + * { margin-top: 1.5rem; }
-.project-body > h3 { margin-top: 5.5rem; }
-.project-body > h3.brief-heading { margin-top: 2rem; }
+.project-body > h2 { margin-top: 5.5rem; }
+.project-body > h2.brief-heading { margin-top: 2rem; }
+.project-body h2 + p { margin-top: 0.75rem; }
+
+/* These are section headings within the page (h1 > h2), but keep the
+   same visual size as the rest of the site's h3 to match existing pages. */
+.project-body h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
 
 .project-body img {
     width: 100%;
@@ -573,7 +576,7 @@ header nav a {
     background: #2F2F2F;
     color: #fff;
     font-family: "Work Sans", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     padding: 6px 14px;
     border-radius: 100px;
     white-space: nowrap;
@@ -634,6 +637,7 @@ header nav a {
 .subsection-heading {
     font-family: "Work Sans", sans-serif;
     font-size: 18px;
+    line-height: 28px;
     font-weight: 700;
     color: #2F2F2F;
     margin: 0;
@@ -814,7 +818,6 @@ header nav a {
     h1 { font-size: 40px; line-height: 48px; }
     h2 { font-size: 32px; line-height: 40px; }
     h3 { font-size: 24px; line-height: 32px; }
-    h4 { font-size: 20px; line-height: 28px; }
 
     .page-content { width: 100%; padding: 0 1.25rem 3rem; }
 
@@ -822,7 +825,7 @@ header nav a {
     .hero-banner h1 { font-size: 58px; line-height: 64px; }
     .hero { padding: 3rem 0 1.5rem; }
     .hero-subheading { font-size: 24px; line-height: 28px; }
-    .project-title-sub { font-size: 17px; line-height: 24px; }
+    .project-title-sub { font-size: 24px; line-height: 28px; }
 
     .project-image img { max-height: 200px; }
 
