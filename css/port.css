@@ -37,6 +37,13 @@
     font-display: swap;
     src: url("../Assets/fonts/work-sans-italic-latin.woff2") format("woff2");
 }
+@font-face {
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../Assets/fonts/aleo-latin.woff2") format("woff2");
+}
 
 /* ============================================================
    RESET
@@ -163,7 +170,7 @@ header nav a {
     position: relative;
     z-index: 1;
     max-width: 75%;
-    padding: 8rem 0 2rem;
+    padding: 10rem 0 2rem;
 }
 
 .hero-subheading {
@@ -175,10 +182,47 @@ header nav a {
     margin: 0;
 }
 
+/* Fixed-height viewport with a top/bottom fade mask, so each word looks like
+   it emerges from below and dissolves off the top rather than just cutting
+   in and out. */
+.word-cycle {
+    position: relative;
+    height: 70px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.word-cycle-text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #98B071;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.word-cycle-text.is-animating {
+    animation: word-cycle 2s ease-in-out;
+}
+
+@keyframes word-cycle {
+    0%   { opacity: 0; transform: translateY(10px); }
+    15%  { opacity: 1; transform: translateY(0); }
+    85%  { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
 /* Homepage hero only: swap the usual dark-heading / red-subheading colors,
    and scale the heading up to match the Figma mockup. */
 .hero-banner h1 {
     color: #C92F1D;
+    font-family: "Aleo", serif;
     font-size: 80px;
     line-height: 100px;
     font-weight: 600;
