@@ -687,7 +687,31 @@ header nav a {
     margin: 0;
 }
 
-.project-body > .subsection-heading { margin-top: 3.5rem; }
+/* A collapsed "Experience personalisation flow" reads just like a normal
+   subsection heading, with a small +/- affordance; expanding it reveals the
+   supporting paragraphs and screenshot without interrupting the main
+   written analysis for readers who skip past it. */
+.project-body > .flow-details { margin-top: 3.5rem; }
+
+.flow-details > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flow-details > summary::-webkit-details-marker { display: none; }
+
+.flow-details > summary::after {
+    content: '+';
+    color: #C92F1D;
+    font-weight: 600;
+}
+
+.flow-details[open] > summary::after { content: '\2212'; }
+
+.flow-details > * + * { margin-top: 1.5rem; }
 
 .tension-list {
     display: flex;
