@@ -3,46 +3,39 @@
    ============================================================ */
 
 @font-face {
-    font-family: "Roboto";
+    font-family: "Work Sans";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../Assets/fonts/roboto-latin.woff2") format("woff2");
+    src: url("../Assets/fonts/work-sans-latin.woff2") format("woff2");
 }
 @font-face {
-    font-family: "Roboto";
+    font-family: "Work Sans";
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url("../Assets/fonts/roboto-latin.woff2") format("woff2");
+    src: url("../Assets/fonts/work-sans-latin.woff2") format("woff2");
 }
 @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url("../Assets/fonts/roboto-latin.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: url("../Assets/fonts/roboto-italic-latin.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("../Assets/fonts/roboto-slab-latin.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Roboto Slab";
+    font-family: "Work Sans";
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url("../Assets/fonts/roboto-slab-latin.woff2") format("woff2");
+    src: url("../Assets/fonts/work-sans-latin.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../Assets/fonts/work-sans-latin.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Work Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../Assets/fonts/work-sans-italic-latin.woff2") format("woff2");
 }
 
 /* ============================================================
@@ -50,30 +43,45 @@
    ============================================================ */
 
 *, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; cursor: url("../Assets/cursor.cur"), auto; }
 
 /* ============================================================
    BASE
    ============================================================ */
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #FFF6EF;
+    font-family: "Work Sans", sans-serif;
+    background-color: #FFFEFA;
     background-image:
-        linear-gradient(rgba(234,136,7,0.15) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(234,136,7,0.15) 1px, transparent 1px);
+        linear-gradient(#F2F0E6 1px, transparent 1px),
+        linear-gradient(90deg, #F2F0E6 1px, transparent 1px);
     background-size: 24px 24px;
 }
 
-h1 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 56px; line-height: 64px; color: #2F2F2F; margin: 0 0 0.5rem; }
-h2 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 40px; line-height: 48px; color: #2F2F2F; }
-h3 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 24px; line-height: 32px; color: #2F2F2F; }
-h4 { font-family: "Roboto", sans-serif; font-weight: 600; font-size: 20px; line-height: 28px; color: #6B6B6B; }
-h5 { font-family: "Roboto", sans-serif; font-size: 16px; line-height: 24px; color: #727272; }
-p  { font-family: "Roboto", sans-serif; font-size: 16px; line-height: 22px; color: #2F2F2F; }
+h1 { font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 56px; line-height: 64px; color: #2F2F2F; margin: 0 0 0.5rem; }
+h2 { font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 40px; line-height: 48px; color: #2F2F2F; }
+h3 { font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 24px; line-height: 32px; color: #2F2F2F; }
+h4 { font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 20px; line-height: 28px; color: #6B6B6B; }
+h5 { font-family: "Work Sans", sans-serif; font-size: 16px; line-height: 24px; color: #727272; }
+p  { font-family: "Work Sans", sans-serif; font-size: 18px; line-height: 24px; color: #2F2F2F; }
+
+ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+li {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2F2F2F;
+}
 
 a         { color: #2F2F2F; }
-a:hover   { color: #EA8807; text-decoration: none; cursor: pointer; }
+a:hover   { color: #C92F1D; text-decoration: none; cursor: pointer; }
 
 /* ============================================================
    NAV
@@ -97,21 +105,21 @@ header nav {
 }
 
 header nav a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
 }
 
 .cool-link { color: #2F2F2F; display: inline-block; }
-.this-page  { color: #EA8807; display: inline-block; }
+.this-page  { color: #C92F1D; display: inline-block; }
 
 .cool-link::after,
 .this-page::after {
     content: '';
     display: block;
     height: 2px;
-    background: #EA8807;
+    background: #C92F1D;
     transition: width .3s;
 }
 
@@ -125,57 +133,93 @@ header nav a {
 
 .page-content {
     width: 75vw;
-    padding: 0 0 4rem 3rem;
+    padding: 0 0 4rem 4rem;
 }
 
 /* ============================================================
    HERO
    ============================================================ */
 
+.hero-banner {
+    position: relative;
+    background-color: #E1ECCF;
+    padding: 0 4rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+/* Fractal-noise filter thresholded into soft-edged blobs (not fine grain):
+   feComponentTransfer pushes the noise's mid-tones to full transparent/opaque,
+   and feFlood+feComposite paints the surviving blobs in a pale cream so they
+   composite directly over the green with no CSS blend-mode trick needed. */
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='2' seed='7' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0' result='gray'/%3E%3CfeComponentTransfer in='gray' result='mask'%3E%3CfeFuncA type='linear' slope='40' intercept='-25'/%3E%3C/feComponentTransfer%3E%3CfeFlood flood-color='%23F3F6E9' result='flood'/%3E%3CfeComposite in='flood' in2='mask' operator='in'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 .hero {
-    padding: 3rem 0 2rem;
+    position: relative;
+    z-index: 1;
+    max-width: 75%;
+    padding: 8rem 0 2rem;
 }
 
 .hero-subheading {
-    font-family: "Roboto Slab", serif;
-    font-style: italic;
-    color: #EA8807;
+    font-family: "Work Sans", sans-serif;
+    color: #C92F1D;
     font-size: 32px;
     line-height: 40px;
     font-weight: 400;
     margin: 0;
 }
 
+/* Homepage hero only: swap the usual dark-heading / red-subheading colors,
+   and scale the heading up to match the Figma mockup. */
+.hero-banner h1 {
+    color: #C92F1D;
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 600;
+}
+.hero-banner .hero-subheading { color: #2F2F2F; }
+
 /* ============================================================
    ABOUT CARD
    ============================================================ */
 
 .about-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
-    padding: 2rem;
     margin-bottom: 3rem;
+}
+
+/* Shared small-caps-style section label, used by .about-label,
+   .contact-method-label, .brief-label and .case-summary-label. */
+.about-label,
+.about-card .about-label,
+.contact-method-label,
+.brief-label,
+.case-summary-label {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #C92F1D;
 }
 
 .about-label,
 .about-card .about-label {
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    color: #888;
     margin: 0 0 1rem;
-    font-family: "Roboto", sans-serif;
 }
 
 .about-card p { color: #2F2F2F; margin-bottom: 1rem; }
 .about-card p:last-child { margin-bottom: 0; }
-.about-card a { color: #EA8807; }
+.about-card a { color: #C92F1D; }
 .about-card a:hover { color: #c27006; }
 
 .phrase-highlight {
-    background: linear-gradient(#E4F2FB, #E4F2FB) no-repeat left center;
+    background: linear-gradient(#F6E3E1, #F6E3E1) no-repeat left center;
     background-size: 0% 100%;
     border-radius: 3px;
     padding: 0 3px;
@@ -327,7 +371,7 @@ header nav a {
 .project-image img { width: 100%; display: block; border-radius: 4px; }
 
 .project-year {
-    color: #EA8807;
+    color: #C92F1D;
     font-weight: 600;
     margin: 0;
 }
@@ -345,13 +389,13 @@ header nav a {
 
 .chip {
     display: inline-block;
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 14px;
     font-weight: 500;
     padding: 0.25rem 0.75rem;
     border-radius: 999px;
     color: #2F2F2F;
-    background-color: #FFF6EF;
+    background-color: #EBF1E2;
 }
 
 /* ============================================================
@@ -423,16 +467,11 @@ header nav a {
     transition: color 0.2s;
 }
 
-.contact-method:hover { color: #EA8807 !important; text-decoration: none; }
+.contact-method:hover { color: #C92F1D !important; text-decoration: none; }
 
 .contact-method-label {
-    font-weight: 700;
     min-width: 80px;
-    color: #888 !important;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    font-family: "Roboto", sans-serif;
+    color: #C92F1D !important;
 }
 
 .contact-response-note {
@@ -440,7 +479,6 @@ header nav a {
     margin-bottom: 0;
     color: #888;
     font-size: 14px;
-    font-style: italic;
 }
 
 
@@ -461,10 +499,9 @@ header nav a {
     font-size: 32px;
     line-height: 40px;
     font-weight: 400;
-    font-style: italic;
-    color: #EA8807;
+    color: #C92F1D;
     margin: 0.5rem 0 0;
-    font-family: "Roboto Slab", serif;
+    font-family: "Work Sans", sans-serif;
 }
 
 .project-article {
@@ -535,7 +572,7 @@ header nav a {
     transform: translateX(-50%);
     background: #2F2F2F;
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 13px;
     padding: 6px 14px;
     border-radius: 100px;
@@ -591,17 +628,11 @@ header nav a {
 }
 
 .brief-label {
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    color: #888;
     margin: 0 0 0.5rem;
-    font-family: "Roboto", sans-serif;
 }
 
 .subsection-heading {
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #2F2F2F;
@@ -624,7 +655,7 @@ header nav a {
 }
 
 .tension-number {
-    color: #EA8807;
+    color: #C92F1D;
     font-weight: 700;
     flex-shrink: 0;
     line-height: 22px;
@@ -652,13 +683,7 @@ header nav a {
 
 .case-summary-label {
     display: block;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    color: #888;
     margin-bottom: 1rem;
-    font-family: "Roboto", sans-serif;
 }
 
 .case-summary p {
@@ -677,6 +702,7 @@ header nav a {
 
 .case-summary li {
     color: #2F2F2F;
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -685,19 +711,19 @@ header nav a {
     border-collapse: collapse;
     margin-top: 1.5rem;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
-.research-plan thead tr  { border-bottom: 2px solid #EA8807; text-align: left; }
+.research-plan thead tr  { border-bottom: 2px solid #C92F1D; text-align: left; }
 .research-plan th        { padding: 0.75rem 1.25rem; font-weight: 600; color: #2F2F2F; }
 .research-plan td        { padding: 1rem 1.25rem; vertical-align: top; border-bottom: 1px solid #eee; color: #2F2F2F; }
-.study-label             { font-weight: 600; color: #EA8807; white-space: nowrap; }
+.study-label             { font-weight: 600; color: #C92F1D; white-space: nowrap; }
 
 .pull-quote {
     position: relative;
     margin: 1.5rem 0;
     padding: 1.25rem 1.5rem 1.25rem 3.5rem;
-    border-left: 3px solid #EA8807;
+    border-left: 3px solid #C92F1D;
     background: #fafafa;
     border-radius: 0 6px 6px 0;
 }
@@ -708,19 +734,19 @@ header nav a {
     left: 0.75rem;
     top: 0.5rem;
     font-size: 3rem;
-    color: #EA8807;
+    color: #C92F1D;
     font-family: Georgia, serif;
     line-height: 1;
 }
 
-.pull-quote p    { margin: 0 0 0.5rem 0; color: #2F2F2F; font-style: italic; }
+.pull-quote p    { margin: 0 0 0.5rem 0; color: #2F2F2F; }
 .pull-quote cite { font-size: 14px; color: #999; font-style: normal; }
 
-.img-caption { font-size: 14px; font-style: italic; color: #999; margin-top: 0.75rem; }
+.img-caption { font-size: 14px; color: #999; margin-top: 0.75rem; }
 
 .back-btn {
     display: inline-block;
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #2F2F2F;
@@ -728,7 +754,7 @@ header nav a {
     transition: color 0.2s;
 }
 
-.back-btn:hover { color: #EA8807; text-decoration: none; }
+.back-btn:hover { color: #C92F1D; text-decoration: none; }
 
 .cta-btn {
     display: inline-flex;
@@ -736,7 +762,7 @@ header nav a {
     gap: 8px;
     background: #2F2F2F;
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     padding: 12px 24px;
@@ -745,7 +771,7 @@ header nav a {
     transition: background-color 0.2s;
 }
 
-.cta-btn:hover { background-color: #EA8807; color: #fff; text-decoration: none; }
+.cta-btn:hover { background-color: #C92F1D; color: #fff; text-decoration: none; }
 
 .cta-btn-icon { flex-shrink: 0; }
 
@@ -792,11 +818,11 @@ header nav a {
 
     .page-content { width: 100%; padding: 0 1.25rem 3rem; }
 
-    .hero { padding: 2rem 0 1.5rem; }
-    .hero-subheading { font-size: 17px; line-height: 24px; }
+    .hero-banner { padding: 0 1.25rem; margin-bottom: 2rem; }
+    .hero-banner h1 { font-size: 58px; line-height: 64px; }
+    .hero { padding: 3rem 0 1.5rem; }
+    .hero-subheading { font-size: 24px; line-height: 28px; }
     .project-title-sub { font-size: 17px; line-height: 24px; }
-
-    .about-card { padding: 1.5rem; }
 
     .project-image img { max-height: 200px; }
 
