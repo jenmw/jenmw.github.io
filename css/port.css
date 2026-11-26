@@ -581,6 +581,12 @@ header nav a {
     margin-top: 1.5rem;
 }
 
+.project-body-video {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
 .image-pair {
     display: flex;
     gap: 1.5rem;
